@@ -4,6 +4,7 @@ ic.configureOutput(prefix=f'Debug | ', includeContext=True)
 import os
 import datetime
 import torch
+from transformers import BitsAndBytesConfig
 # import torch.nn as nn # Not needed for pre-trained model architecture
 # import torch.optim as optim # Not needed for inference
 # from torch.utils.data import Dataset, DataLoader # Not needed for simple inference
@@ -41,8 +42,9 @@ def main():
 
     # Configure Quantization (adjust as needed for your hardware)
     quantization_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_compute_dtype=torch.bfloat16  # or torch.float16
+        load_in_8bit=True,
+        llm_int8_enable_fp32_cpu_offload=True
+        #bnb_4bit_compute_dtype=torch.bfloat16  # or torch.float16
         # bnb_4bit_use_double_quant=True,
         # bnb_4bit_quant_type="nf4",
     )
@@ -52,7 +54,7 @@ def main():
         model = AutoModelForCausalLM.from_pretrained(
             model_name,
             quantization_config=quantization_config,
-            device_map="auto",  # Automatically distributes model across GPU/CPU
+            device_map="cpu",  # Automatically distributes model across GPU/CPU
             # torch_dtype=torch.bfloat16 # Optional: can improve performance if supported
         )
     except Exception as e:
