@@ -18,7 +18,7 @@ This project demonstrates proficiency in building modern, end-to-end AI applicat
 
 ### 🔗 Live Demo
 
-**You can try out the live application here:** []
+**You can try out the live application here:** [https://huggingface.co/spaces/NeelM47/rag-project]
 
 ---
 
