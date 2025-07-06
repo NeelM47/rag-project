@@ -46,3 +46,42 @@ sequenceDiagram
     RAG-->>App: Returns the final answer
     App-->>User: Displays the answer
 
+### 🚀 How to Run Locally
+
+To run this project on your own machine, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/[YOUR_USERNAME]/[YOUR_REPO_NAME].git
+    cd [YOUR_REPO_NAME]
+    ```
+
+2.  **Set up a Python virtual environment:**
+    ```bash
+    python -m venv .venv
+    source .venv/bin/activate
+    ```
+    *(On Windows, use `.venv\Scripts\activate`)*
+
+3.  **Install the dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Create a `.env` file** in the root directory and add your Gemini API key:
+    ```
+    GEMINI_API_KEY="YOUR_API_KEY_HERE"
+    ```
+
+5.  **Run the Streamlit application:**
+    ```bash
+    streamlit run app.py
+    ```
+
+---
+
+### 🧠 Challenges & Future Improvements
+
+- **Challenge:** One of the initial challenges was ensuring reliable authentication with the Google Cloud APIs, which led to a deeper understanding of ADC vs. API Key authentication methods.
+
+- **Improvement:** A future enhancement would be to implement source citation, where the chatbot not only provides an answer but also shows which specific parts of the CV were used to generate it.
