@@ -45,6 +45,7 @@ sequenceDiagram
     LLM-->>RAG: Generates a fact-based answer
     RAG-->>App: Returns the final answer
     App-->>User: Displays the answer
+```
 
 ### 🚀 How to Run Locally
 
