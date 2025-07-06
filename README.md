@@ -8,7 +8,7 @@ This project demonstrates proficiency in building modern, end-to-end AI applicat
 
 ### 🔗 Live Demo
 
-**You can try out the live application here:** [LINK TO YOUR HUGGING FACE SPACES DEMO WHEN DEPLOYED]
+**You can try out the live application here:** []
 
 ---
 
@@ -53,8 +53,8 @@ To run this project on your own machine, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/[YOUR_USERNAME]/[YOUR_REPO_NAME].git
-    cd [YOUR_REPO_NAME]
+    git clone https://github.com/NeelM47/rag-project.git
+    cd rag-project
     ```
 
 2.  **Set up a Python virtual environment:**
