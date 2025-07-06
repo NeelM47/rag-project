@@ -1,13 +1,3 @@
----
-title: CV-Bot Career Assistant
-emoji: 🤖
-colorFrom: blue
-colorTo: green
-sdk: streamlit
-app_file: app.py
-pinned: false
----
-
 # 🤖 CV-Bot: Your Personal Career Assistant
 
 ![CV-Bot Screenshot](https://github.com/NeelM47/rag-project/blob/main/assets/cv-bot-screenshot.png?raw=true)
