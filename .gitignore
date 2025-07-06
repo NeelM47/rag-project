@@ -1,18 +1,24 @@
-# Python
+# Environment variables
+.env
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-*.egg-info/
-dist/
-build/
-*.egg
-venv/
-env/
-.env
-*.log
 
-.vscode/
+# Vector Database / Index files
+# This is very important. Your DB can be large and shouldn't be in Git.
+chroma_db/
+faiss_index/
+faiss_index_manual/
+
+# IDE and OS specific files
 .idea/
-*.swp
-*.swo
+.vscode/
+.DS_Store
+
+# Streamlit
+.streamlit/
